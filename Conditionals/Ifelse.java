@@ -20,8 +20,8 @@ public class Ifelse {
               // }
 
              
-             int A = 25;
-             int B = 29;
+       //       int A = 25;
+       //       int B = 29;
 
        //       if(A >= B){
        //         System.out.println("Value of A is greater than B");
@@ -34,12 +34,29 @@ public class Ifelse {
             //another way to write
 
 
-               if(A >= B)
-                System.out.println("A is greater than B");
+              //  if(A >= B)
+              //   System.out.println("A is greater than B");
 
-              else{
-                     System.out.println("B is greater than A");
-              }     
+              // else{
+              //        System.out.println("B is greater than A");
+              // }    
 
-       }
+
+              
+ //ODD EVEN checking problem
+
+
+      System.out.println("Enter the value of Number");
+       int number = sc.nextInt();
+       
+       if(number%2 == 0) {
+              System.out.println(number + " is Even");
+       } else{
+              System.out.println(number + " is Odd");
+       } 
+           
+
+
+}
+
 }
