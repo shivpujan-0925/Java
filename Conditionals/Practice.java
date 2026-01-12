@@ -55,22 +55,40 @@ public class Practice{
 
             //Leap year problem:
             
-            System.out.println("Enter Year:");
-            double year = sc.nextDouble();
-            if(year%4 == 0){
-               if(year % 100 == 0){
-                         if(year % 400 == 0){
-                             System.out.println( year + " Leap year");
-                         }else{
-                            System.out.println(year + " Not a Leap Year");
-                         }
-               }else{
-                     System.out.println(year + " Lear year");
-               }
-            }else{
-              System.out.println(year + " Not a Leap year");
-            }
+       //      System.out.println("Enter Year:");
+       //      double year = sc.nextDouble();
+       //      if(year%4 == 0){
+       //         if(year % 100 == 0){
+       //                   if(year % 400 == 0){
+       //                       System.out.println( year + " Leap year");
+       //                   }else{
+       //                      System.out.println(year + " Not a Leap Year");
+       //                   }
+       //         }else{
+       //               System.out.println(year + " Lear year");
+       //         }
+       //      }else{
+       //        System.out.println(year + " Not a Leap year");
+       //      }
 
+         // OR
+         
+
+         System.out.println("Enter Year:");
+         int year = sc.nextInt();
+         boolean x = (year % 4) == 0;
+         boolean y = (year % 100) != 0;
+         boolean z = (year % 400) == 0;
+
+         if(x && (y || z)){
+              System.out.println(year + " is Lear year");
+         }else{
+              System.out.println(year + " Not a Leap year");
+         }
+
+
+
+         
        }
 
 }
