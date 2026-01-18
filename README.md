@@ -1,2 +1,2 @@
-#DSA
-## Learning DSA in JAVA 
+## DATA STRUCTURE AND ALGORITHM
+### Learning DSA in JAVA 
