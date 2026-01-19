@@ -39,8 +39,42 @@ public class Function{
           return sum;
        }
 
+       
+       //Swap- Values Exchanges
+       public static void swap(int a, int b){
+           //Swap
+              int temp = a;
+              a = b;
+              b = temp;
+              System.out.println("a = " + a);
+              System.out.println("b = " + b);
+       }
+
+
+
+
+       //Product of a & b;
+       public static int Product(int a, int b){
+              int product = a * b;
+              return product;
+              
+       }
+
+       // Factorial of a Number
+
+       public static int Factorial( int num){
+              int fact = 1;
+              for(int i = 1; i<=num; i++){
+                  fact = fact * i;   //factorial
+                  
+              }
+              return fact;
+            
+       }
+
        public static void main(String args[]){
               //  printHelloWorld();  //function call
+
 
               // Scanner sc = new Scanner(System.in);
               // System.out.println("Enter first number");
@@ -53,18 +87,23 @@ public class Function{
               //  System.out.println("Sum is:" + sum);
 
 
-              //Swap- Values Exchanges
 
-              int a = 5;
-              int b = 10;
-            
-              //Swap
-              int temp = a;
-              a = b;
-              b = temp;
-              System.out.println("a = " + a);
-              System.out.println("b = " + b);
-              
+              //Swap- Values Exchanges
+              // int a = 5;
+              // int b = 10;
+              // swap(a, b);
+             
+
+
+              //Product of a & b
+             
+              // int result = Product(25, 29);
+              // System.out.println( "a * b =" +result);
+
+
+              //Factorial of a Number
+              int fact = Factorial(5);
+              System.out.println(fact);
 
               
        }
