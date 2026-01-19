@@ -71,10 +71,10 @@ public class Function{
               return fact;
             
        }
-
+     
+       
        public static void main(String args[]){
               //  printHelloWorld();  //function call
-
 
               // Scanner sc = new Scanner(System.in);
               // System.out.println("Enter first number");
@@ -86,15 +86,11 @@ public class Function{
               //  int sum = calculateSum(a,b);   //arguments or actual parameters
               //  System.out.println("Sum is:" + sum);
 
-
-
               //Swap- Values Exchanges
               // int a = 5;
               // int b = 10;
               // swap(a, b);
              
-
-
               //Product of a & b
              
               // int result = Product(25, 29);
@@ -102,9 +98,13 @@ public class Function{
 
 
               //Factorial of a Number
-              int fact = Factorial(5);
-              System.out.println(fact);
+              // int fact = Factorial(5);
+              // System.out.println(fact);
 
+
+      
               
        }
 }
+
+
