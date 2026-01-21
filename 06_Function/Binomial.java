@@ -1,6 +1,5 @@
 public class Binomial {
 
-
    // Finding Binomial Coefficient.
 
    public static int Factorial(int num){
