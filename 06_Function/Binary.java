@@ -7,7 +7,7 @@ public class Binary {
 
        for(int power = 0; binaryNum >=1; power++ ){
               int lastDigit = binaryNum % 10;
-              decimalNumber = decimalNumber + (lastDigit * (int)Math.pow(2, power));
+              decimalNumber = decimalNumber + (lastDigit * (int)mathFunction.pow(2, power));
               binaryNum = binaryNum / 10;
              
        }
@@ -26,7 +26,7 @@ public class Binary {
 
          for(int pow = 0; num >=1; pow++){
           int remainder = num % 2;
-          binaryNum = binaryNum + remainder * (int)Math.pow(10, pow);
+          binaryNum = binaryNum + remainder * (int)mathFunction.pow(10, pow);
           num = num / 2; 
         
          }

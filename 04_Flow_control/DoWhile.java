@@ -90,7 +90,7 @@ public class DoWhile {
                           
                      //Optimized:
 
-                       for (int i = 2; i <= Math.sqrt(n); i++) {
+                       for (int i = 2; i <= mathFunction.sqrt(n); i++) {
                             if (n % i == 0) { // n is multiple of i(i is not 1 or i)
                                    isPrime = false;
                             }
