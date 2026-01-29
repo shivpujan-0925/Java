@@ -62,16 +62,43 @@ public class Pattern {
 
 
        //Top-right triangle:
-       for(int row =1; row<=n; row++){
-           for(int col = 1; col<=n; col++){
-              if(row <= col){
-                     System.out.print("* ");
-              }else{
-                     System.out.print("__");
+       // for(int row =1; row<=n; row++){
+       //     for(int col = 1; col<=n; col++){
+       //        if(row <= col){
+       //               System.out.print("* ");
+       //        }else{
+       //               System.out.print("__");
+       //        }
+       //     }
+       //     System.out.println();
+       // }
+
+
+
+   // X-Pattern:
+      for(int row = 1; row <=n; row++){
+         for(int col = 1; col <=n; col++){
+
+         
+              // if(row == col || row + col == n+1){
+              //        System.out.print("*");
+              // }else{
+              //        System.out.print(" ");
+              // }
+              
+
+           //To print center star:
+
+              if(row == col && row + col == n+1){
+                     System.out.print("*");
               }
-           }
-           System.out.println();
-       }
+              else{
+                     System.out.print("_");
+              }
+         }
+         System.out.println();
+      }
+
 
        //count Triangle
 
