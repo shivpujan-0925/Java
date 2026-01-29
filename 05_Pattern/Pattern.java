@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Pattern {
        public static void main(String args[]){
               Scanner scn = new Scanner(System.in);
+              System.out.println("Enter value of n");
               int n = scn.nextInt();
 
               //square grid
@@ -24,16 +25,16 @@ public class Pattern {
 
        //another way:
 
-       for(int row = 1; row <=n; row++){
-              for(int col = 1; col <= n; col++){
-                     if(col <= row){
-                            System.out.print("* ");
-                     }else{
-                            System.out.print("");
-                     }
-              }
-              System.out.println();
-       }
+       // for(int row = 1; row <=n; row++){
+       //        for(int col = 1; col <= n; col++){
+       //               if(col <= row){
+       //                      System.out.print("* ");
+       //               }else{
+       //                      System.out.print("");
+       //               }
+       //        }
+       //        System.out.println();
+       // }
 
        
        // Top-left triangle
@@ -44,6 +45,33 @@ public class Pattern {
        //        }
        //        System.out.println();
        // }
+
+
+       //another way:
+       
+       // for(int row = 1; row<=n; row++){
+       //        for(int col = 1; col<=n; col++){
+       //           if(col + row <= n+1){
+       //              System.out.print(" * ");
+       //           }
+                     
+       //        }
+       //        System.out.println();
+                      
+       // }
+
+
+       //Top-right triangle:
+       for(int row =1; row<=n; row++){
+           for(int col = 1; col<=n; col++){
+              if(row <= col){
+                     System.out.print("* ");
+              }else{
+                     System.out.print("__");
+              }
+           }
+           System.out.println();
+       }
 
        //count Triangle
 
@@ -56,5 +84,6 @@ public class Pattern {
 
 
        }
+
 }
 
