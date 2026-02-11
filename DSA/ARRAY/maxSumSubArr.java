@@ -27,7 +27,7 @@ public class maxSumSubArr {
        //     System.out.println("Maximum sum of SubArray is : " + maxSum_SubArr);
 
 
-//PREFIX SUM METHOD:   optimized
+//PREFIX SUM METHOD: optimized
           
        int maxSum = Integer.MIN_VALUE;
        int currentSum = 0;
@@ -55,11 +55,11 @@ public class maxSumSubArr {
        }
        System.out.println("Maximum sum: " + maxSum);
 
-
       }
 
        public static void main(String args[]){
            int numbers[] = {10,-2,6,-1,3};
            maxSum(numbers);
        }
+
 }
