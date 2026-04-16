@@ -12,7 +12,7 @@ public class OOPS{
     //  System.out.println(p1.Color);
 
 
-
+//_______________________________________________________________________________________
 
     //bank account
     BankAccount myAcc = new BankAccount();
@@ -25,6 +25,8 @@ public class OOPS{
 
    }
 }
+
+//____________________________________________________________________________________________________
 
 class Pen {
     String Color;
@@ -50,9 +52,9 @@ class Student{
 }
 
 
+//________________________________________________________________________________________________
 
 //ACCESS MODIFIER
-
 class BankAccount {
     public String username;
     private String password;
