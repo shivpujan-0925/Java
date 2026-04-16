@@ -2,14 +2,26 @@ public class OOPS{
    public static void  main(String args[]){
     Pen p1 = new Pen();  //created a pen object called p1
     p1.setColor("Blue");
-    System.out.println(p1.Color);
+    // System.out.println(p1.Color);
 
     p1.setTip(3);
-    System.out.println(p1.Tip);
+    // System.out.println(p1.Tip);
 
     // p1.setColor("yellow");
     p1.Color = "Yellow"; 
-     System.out.println(p1.Color);
+    //  System.out.println(p1.Color);
+
+
+
+
+    //bank account
+    BankAccount myAcc = new BankAccount();
+
+    myAcc.username = "radhe";
+    // myAcc.password = "helloRadhe";    gives err => because password has private access only
+    // System.out.println(myAcc.password);
+    System.out.println(myAcc.username);
+    myAcc.setPassword("helloRadhe");
 
    }
 }
@@ -34,5 +46,17 @@ class Student{
 
     void CalcPercentage(int phy, int chem, int math){
         percentage = (phy + chem + math)/3;
+    }
+}
+
+
+
+//ACCESS MODIFIER
+
+class BankAccount {
+    public String username;
+    private String password;
+    public void setPassword(String pwd){
+        password = pwd;
     }
 }
