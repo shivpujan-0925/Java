@@ -1,15 +1,29 @@
 public class Recursion01 {
+    
+    //Problem1
+    // public static void printDec(int n ){
+    //     if(n == 1){
+    //       System.out.print(n);
+    //       return;
+    //     }
+    //     System.out.print(n + " ");
+    //     printDec(n-1);
+    // }
 
-    public static void printDec(int n ){
+    //Problem2
+
+    public static void printInc(int n){
         if(n == 1){
-          System.out.print(n);
-          return;
+            System.out.print(n+" ");
+            return;
         }
-        System.out.print(n + " ");
-        printDec(n-1);
+
+         printInc(n-1);   //calling 
+         System.out.print(n + " "); 
     }
     public static void main(String[] args) {
         int n = 10;
-          printDec(n);
+        //   printDec(n);
+        printInc(n);
     }
 }
