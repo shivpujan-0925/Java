@@ -1,26 +1,29 @@
 public class subArray {
+       public static void printSubArr(int nums[]){
+              int n = nums.length;
+              int totalSubArr = 0;
+              //start
+              for(int i = 0; i < n; i++ ){
+                     int start = i;
+                  for(int j = i; j < n; j++){
+                     int end = j;
 
-
-       public static void subArrays(int numbers[]){
-           int totalSubArr = 0;
-              for(int i=0; i < numbers.length; i++){
-                     int start =i;
-                     for(int j =i; j < numbers.length; j++){
-                        int end = j;
-                        for(int k =start; k<=end; k++ ){
-                            System.out.print(numbers[k] + " ");
-                        }
-                        totalSubArr++;
-                        System.out.println();
+                     //print subArr
+                     for(int k = start; k < end; k++){
+                            System.out.print(nums[k] + " ");
+                            
                      }
-                     System.out.println();
-                    
+                     totalSubArr++;
+                     System.out.print("  ");
 
+                  }
+             
+                  System.out.println();   
               }
-               System.out.println("Total subArray = "+ totalSubArr);
+              System.out.println(totalSubArr);
        }
        public static void main(String[] args) {
-              int numbers[] = {2,4,6,9};
-              subArrays(numbers);
+              int nums[] = {2,4,3,5,1,8,9};
+              printSubArr(nums);
        }
 }
