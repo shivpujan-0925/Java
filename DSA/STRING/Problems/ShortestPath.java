@@ -2,33 +2,41 @@ package Problems;
 public class ShortestPath {
     
     public static double getShortestDist(String path){
-        int n = path.length();
-        int x = 0, y = 0;
-        for(int i = 0; i<n; i++){
-            char Dir = path.charAt(i);
-            //East
-            if(Dir == 'E'){
-                x++;
-            }
-            //west
-            if(Dir == 'W'){
-                x--;
-            }
 
-            //North
-            if(Dir == 'N'){
-                y++;
-            }
-
-            //South
-            if(Dir == 'S'){
-                y--;
-            }
+       int x_cordinate = 0;    //origin
+       int y_cordinate = 0;
        
-        }
-        double shortestDist = x*x + y*y;
-        double res = Math.sqrt(shortestDist);
-        return res;
+       for(int i = 0; i < path.length(); i++){
+          char Dir = path.charAt(i);   //check for direction.
+
+          //Dir - North(y-cordinate)
+          if(Dir == 'N'){
+              y_cordinate++;
+          }
+
+          //Dir- South
+          if(Dir == 'S'){
+              y_cordinate--;
+          }
+          
+          //Dir- East
+          if(Dir == 'E'){
+              x_cordinate++;
+          }
+
+            //Dir- West
+          if(Dir == 'W'){
+              x_cordinate--;
+          }
+
+       }
+
+        //calculating shortest distance
+       double shortestPath = Math.sqrt(x_cordinate*x_cordinate + y_cordinate*y_cordinate);
+
+       return shortestPath;
+
+
     }
 
     public static void main(String[] args) {
