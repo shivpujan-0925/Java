@@ -1,7 +1,7 @@
 package Problems;
 public class ShortestPath {
     
-    public static double getShortestDist(String path){
+    public static float getShortestDist(String path){
 
        int x_cordinate = 0;    //origin
        int y_cordinate = 0;
@@ -32,15 +32,16 @@ public class ShortestPath {
        }
 
         //calculating shortest distance
-       double shortestPath = Math.sqrt(x_cordinate*x_cordinate + y_cordinate*y_cordinate);
+      int X2 = x_cordinate*x_cordinate;
+      int Y2 = y_cordinate*y_cordinate;
 
-       return shortestPath;
+       return  (float)Math.sqrt(X2 + Y2);
 
 
     }
 
     public static void main(String[] args) {
-        String path = "WNEENESSSENNN";
+        String path = "NSEESNWWWSSSSSSSNNNNWWWWSEWEW";
        System.out.println( getShortestDist(path));
     }
 }
