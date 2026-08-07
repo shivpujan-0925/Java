@@ -1,23 +1,32 @@
 public class BinaryString {
-    public static void printBinString(int n , int lastPlace, String str){
 
-        // base case
+    public static void printBinaryString(int n, int lastPlace, String str ){
+        //base case
         if(n == 0){
             System.out.println(str);
             return;
         }
 
+        //work:
+        // if(lastPlace == 0){
+        //     printBinaryString(n-1, 0, str+"0");
+        //     printBinaryString(n-1, 1, str+"1");
+        // }else{
+        //     printBinaryString(n-1, 0, str+"0");
+        // }
 
-        //work
-         printBinString(n-1, 0, str+"0");
+        // other way:
+        printBinaryString(n-1, 0, str+"0");
 
-         if(lastPlace == 0){
-             printBinString(n-1, 1, str+"1");
-         }
-
+        if(lastPlace == 0){
+            printBinaryString(n-1, 1, str+"1");
+        }
 
     }
-    public static void main(String[] args) {
-        printBinString(3, 0, "");
-    }
+   public static void main(String[] args) {
+      int n = 5;
+      int lastPlace = 0;
+      String str = "";
+     printBinaryString(n, lastPlace, str);
+   }
 }
