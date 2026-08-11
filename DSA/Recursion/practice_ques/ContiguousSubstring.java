@@ -1,28 +1,30 @@
 public class ContiguousSubstring {
     //brute-force approach:
-    public static int FindContiguousSubstring(int i , int j , String str){
-        int n = str.length();
+    public static int CountContiguousSubstring(int i , int j , String str){
+       int n = str.length();
        int count = 0;
         //base case
-        if(i == n) return 0;
+        if(i == n) return 0;   //i => anchor index
 
-         if(j == n) {
-           return  FindContiguousSubstring(i+1, i+1, str);
+         if(j == n) {      //j => scannner index
+           return  CountContiguousSubstring(i+1, i+1, str);    //j = i+1;
         }
         
         if(str.charAt(i) == str.charAt(j)){
             count++;
         }
 
-        return count + FindContiguousSubstring(i, j+1, str);
-        
-
-            
+        return count + CountContiguousSubstring(i, j+1, str);
+                
     }
+
+
     public static void main(String[] args) {
         int i = 0;
         int j = i;
-        String str = "abcab";
-        System.out.println(FindContiguousSubstring(i, j, str));
+        String str = "aba";
+        System.out.println(CountContiguousSubstring(i, j, str));
+
+
     }
 }
