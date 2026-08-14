@@ -24,14 +24,7 @@ public class MergeSort {
        int k = 0; // iterator for temp array
 
        while(i <= mid && j <= ei){
-          if(arr[i] <= arr[j]){
-            temp[k] = arr[i];
-            i++; 
-          }else{
-            temp[k] = arr[j];
-            j++; 
-          } 
-          k++;   
+            temp[k++] = (arr[i] < arr[j]) ? arr[i++]: arr[j++];  
        }
 
        while(i <= mid){   //when right part completely added to temp but still left pert remains
